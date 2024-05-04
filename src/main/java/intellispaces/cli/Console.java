@@ -12,8 +12,8 @@ import tech.intellispacesframework.core.annotation.Transition;
 public interface Console {
 
   @Transition("e09d266d-9568-44fd-8ed2-cf27da326a37")
-  Console sameWithLastMessage(String message);
+  Console sameConsoleWithLastMessage(String message);
 
   @Transition("0df1747b-b0dc-4a34-9584-54d06af4ffe2")
-  Console sameWithLastMessageAndNewLine(String message);
+  Console sameConsoleWithLastMessageAndNewLine(String message);
 }

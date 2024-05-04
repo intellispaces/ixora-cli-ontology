@@ -15,10 +15,10 @@ import static tech.intellispacesframework.commons.action.ActionBuilders.cachedLa
 public abstract class ConsoleHandle implements MovableObjectHandle<Console>, Console {
 
   @Override
-  public abstract ConsoleHandle sameWithLastMessage(String message);
+  public abstract ConsoleHandle sameConsoleWithLastMessage(String message);
 
   @Override
-  public abstract ConsoleHandle sameWithLastMessageAndNewLine(String message);
+  public abstract ConsoleHandle sameConsoleWithLastMessageAndNewLine(String message);
 
   @Override
   public abstract <Q> ConsoleHandle moveThru(String cid, Q qualifier) throws TraverseException;
@@ -27,16 +27,16 @@ public abstract class ConsoleHandle implements MovableObjectHandle<Console>, Con
   public abstract <Q> ConsoleHandle moveThru(TransitionMethod1<? super Console, ? extends Console, Q> transitionMethod, Q qualifier);
 
   public ConsoleHandle print(String message) {
-    return ExceptionFunctions.coverException(this::moveThru, SAME_WITH_LAST_MESSAGE_CID_GETTER.get(), message);
+    return ExceptionFunctions.coverException(this::moveThru, SAME_CONSOLE_WITH_LAST_MESSAGE_TID_GETTER.get(), message);
   }
 
   public ConsoleHandle println(String message) {
-    return ExceptionFunctions.coverException(this::moveThru, SAME_WITH_LAST_MESSAGE_AND_NEW_LINE_CID_GETTER.get(), message);
+    return ExceptionFunctions.coverException(this::moveThru, SAME_CONSOLE_WITH_LAST_MESSAGE_AND_NEW_LINE_TID_GETTER.get(), message);
   }
 
-  private static final Getter<String> SAME_WITH_LAST_MESSAGE_CID_GETTER = cachedLazyGetter(() ->
-      TransitionFunctions.getTransitionId(Console.class, Console::sameWithLastMessage, null));
+  private static final Getter<String> SAME_CONSOLE_WITH_LAST_MESSAGE_TID_GETTER = cachedLazyGetter(() ->
+      TransitionFunctions.getTransitionId(Console.class, Console::sameConsoleWithLastMessage, null));
 
-  private static final Getter<String> SAME_WITH_LAST_MESSAGE_AND_NEW_LINE_CID_GETTER = cachedLazyGetter(() ->
-      TransitionFunctions.getTransitionId(Console.class, Console::sameWithLastMessageAndNewLine, null));
+  private static final Getter<String> SAME_CONSOLE_WITH_LAST_MESSAGE_AND_NEW_LINE_TID_GETTER = cachedLazyGetter(() ->
+      TransitionFunctions.getTransitionId(Console.class, Console::sameConsoleWithLastMessageAndNewLine, null));
 }
