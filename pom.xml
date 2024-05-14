@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>intellispaces-cli-ontology</artifactId>
+    <artifactId>intellispaces-ixora-cli</artifactId>
     <packaging>jar</packaging>
 
     <build>
@@ -28,7 +28,7 @@
     </build>
 
     <dependencies>
-        <!-- Intellispaces -->
+        <!-- Intellispaces framework -->
         <dependency>
             <groupId>intellispaces</groupId>
             <artifactId>intellispacesframework-core</artifactId>

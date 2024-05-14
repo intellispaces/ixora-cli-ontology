@@ -1,11 +1,11 @@
-package intellispaces.cli;
+package intellispaces.ixora.cli;
 
 import tech.intellispacesframework.core.annotation.AutoGeneration;
 import tech.intellispacesframework.core.annotation.Domain;
 import tech.intellispacesframework.core.annotation.Transition;
 
 /**
- * Console is a simple text inbound/outbound system port.
+ * Console is a simple text in/outbound system port.
  */
 @Domain("ac5ad94b-0d0b-4bc1-b0af-a32c65a28793")
 @AutoGeneration(enabled = false)
