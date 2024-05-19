@@ -1,4 +1,4 @@
-package intellispaces.ixora.cli;
+package tech.intellispaces.ixora.cli;
 
 import tech.intellispacesframework.commons.action.Getter;
 import tech.intellispacesframework.commons.exception.ExceptionFunctions;

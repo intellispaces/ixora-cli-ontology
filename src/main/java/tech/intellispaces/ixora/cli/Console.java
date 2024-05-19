@@ -1,4 +1,4 @@
-package intellispaces.ixora.cli;
+package tech.intellispaces.ixora.cli;
 
 import tech.intellispacesframework.core.annotation.AutoGeneration;
 import tech.intellispacesframework.core.annotation.Domain;
