@@ -1,15 +1,15 @@
 package tech.intellispaces.ixora.cli;
 
-import tech.intellispacesframework.commons.action.Getter;
-import tech.intellispacesframework.commons.exception.ExceptionFunctions;
-import tech.intellispacesframework.core.exception.TraverseException;
-import tech.intellispacesframework.core.guide.n1.Mover1;
-import tech.intellispacesframework.core.object.MovableObjectHandle;
-import tech.intellispacesframework.core.space.transition.TransitionFunctions;
-import tech.intellispacesframework.core.system.Modules;
-import tech.intellispacesframework.core.transition.TransitionMethod1;
+import tech.intellispaces.framework.commons.action.Getter;
+import tech.intellispaces.framework.commons.exception.ExceptionFunctions;
+import tech.intellispaces.framework.core.exception.TraverseException;
+import tech.intellispaces.framework.core.guide.n1.Mover1;
+import tech.intellispaces.framework.core.object.MovableObjectHandle;
+import tech.intellispaces.framework.core.space.transition.TransitionFunctions;
+import tech.intellispaces.framework.core.system.Modules;
+import tech.intellispaces.framework.core.transition.TransitionMethod1;
 
-import static tech.intellispacesframework.commons.action.ActionBuilders.cachedLazyGetter;
+import static tech.intellispaces.framework.commons.action.ActionBuilders.cachedLazyGetter;
 
 /**
  * Handle to object of domain {@link Console}.
