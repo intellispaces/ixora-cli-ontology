@@ -11,8 +11,8 @@ import tech.intellispaces.framework.core.traverse.TraverseTypes;
 public interface Console {
 
   @Transition(value = "e09d266d-9568-44fd-8ed2-cf27da326a37", type = TraverseTypes.Moving)
-  Console print(String message);
+  Void print(String message);
 
   @Transition(value = "0df1747b-b0dc-4a34-9584-54d06af4ffe2", type = TraverseTypes.Moving)
-  Console println(String message);
+  Void println(String message);
 }
