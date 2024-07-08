@@ -1,4 +1,4 @@
-package tech.intellispaces.ixora.cli;
+package intellispaces.ixora.cli;
 
 import tech.intellispaces.framework.core.annotation.Domain;
 import tech.intellispaces.framework.core.annotation.Transition;
