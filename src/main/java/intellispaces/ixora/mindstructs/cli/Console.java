@@ -1,4 +1,4 @@
-package intellispaces.ixora.cli;
+package intellispaces.ixora.mindstructs.cli;
 
 import tech.intellispaces.framework.core.annotation.Domain;
 import tech.intellispaces.framework.core.annotation.Transition;
