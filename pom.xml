@@ -3,12 +3,12 @@
 
     <parent>
         <groupId>intellispaces</groupId>
-        <artifactId>intellispacesframework-parent-pom</artifactId>
+        <artifactId>intellispaces-parent-pom</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>mindstructs</groupId>
-    <artifactId>mindstructs-cli-ontology</artifactId>
+    <groupId>intellispaces</groupId>
+    <artifactId>ixora-cli-ontology</artifactId>
     <packaging>jar</packaging>
 
     <build>
@@ -25,10 +25,15 @@
     </build>
 
     <dependencies>
-        <!-- Intellispaces framework -->
+        <!-- Intellispaces -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispacesframework-core</artifactId>
+            <artifactId>intellispaces-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>intellispaces</groupId>
+            <artifactId>ixora-core-ontology</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
